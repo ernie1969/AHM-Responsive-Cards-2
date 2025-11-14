@@ -1,0 +1,66 @@
+/* Author: AdHubManila
+    Contact No: +63 0995 001 6415 / +63 938 351 6468
+    Email: adhubmanila@gmail.com
+    Web URL: https://adhubmanila.hstn.me 
+*/
+
+
+.ahm-project-gallery{
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+}
+.ahm-project-gallery .item{
+    aspect-ratio: 1.2 / 1;
+    border-radius: 0.5rem;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    cursor: pointer;
+    flex-grow: 1;
+    flex-basis: 15rem;
+    margin: 1rem;
+    overflow: hidden;
+    position: relative;
+    width: 14.5rem;
+}
+.ahm-project-gallery .item img{
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.4s ease;
+    width: 100%;
+}
+.ahm-project-gallery .item:hover img {
+    transform: scale(1.05);
+}
+.info-overlay {
+    background-color: rgba(0, 0, 0, 0.7);
+    height: 100%;
+    left: 0;
+    opacity: 0;
+    position: absolute;
+    text-align: center;
+    top: 0;
+    transition: opacity 0.3s ease;
+    width: 100%;
+}
+.info-overlay .info{
+    align-items: center;
+    bottom: 0;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    justify-content: center;
+    margin: auto;
+    top: 0;
+}
+.ahm-project-gallery .item:hover .info-overlay {
+    opacity: 1;
+}
+.info-overlay h3, 
+.info-overlay h6{
+    color: white;
+}
+.info-overlay .ahm-btn{
+    color: white;
+    margin-top: 1rem;
+}
